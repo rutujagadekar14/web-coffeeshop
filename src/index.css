@@ -1,13 +1,578 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Poppins;
+  overflow-x: hidden;
+  background-color: #fefefe;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header section start
+-------------------------------------------------------------------------------*/
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-size: 100%;
+  z-index: 1;
 }
+
+button.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-brand.logo {
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.navbar-brand.logo:hover,
+.navbar-brand.logo:focus {
+  color: #fefefe;
+}
+
+nav ul {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+nav ul li a #linkstyle {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Header section end 
+------------------------------------------------------------------------------*/
+
+/* Home section start
+------------------------------------------------------------------------------*/
+.home_section {
+  margin-top: 5rem;
+  width: 100%;
+  height: 730px;
+  background-size: 100%;
+  background-image: url(../src/Images/Coffee_cup.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel-item {
+  margin-top: 6rem;
+}
+
+.outstanding_text {
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+}
+
+.coffeeshop_text {
+  font-size: 70px;
+  color: rgb(74, 37, 1);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.there_text {
+  color: black;
+  font-size: 20px;
+}
+
+.Learn_btn {
+  color: white;
+  background-color: black;
+  padding: 15px 40px;
+  border: none;
+  margin-top: 20px;
+}
+
+.Learn_btn:focus {
+  background-color: rgb(42, 42, 42);
+}
+
+a.carousel-control-prev {
+  top: 550px;
+  left: 600px;
+  text-decoration: none;
+}
+
+a.carousel-control-prev:hover {
+  color: black;
+}
+
+a.carousel-control-prev:focus {
+  color: white;
+  background-color: rgb(215, 107, 30);
+}
+
+a.carousel-control-next {
+  top: 550px;
+  right: 600px;
+  text-decoration: none;
+}
+
+a.carousel-control-next:hover {
+  color: black;
+}
+
+a.carousel-control-next:focus {
+  background-color: rgb(215, 107, 30);
+  color: white;
+}
+
+a.carousel-control-prev,
+a.carousel-control-next {
+  opacity: 1;
+  color: rgb(36, 35, 35);
+  background-color: white;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  z-index: 1;
+  align-items: center;
+}
+
+/* home section end------------------------------------------ */
+
+
+/* about section start----------------------------------------- */
+
+/* left side ----------------------*/
+.about_section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about_section .left_side {
+  margin-top: 160px;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+.about_heading {
+  font-size: 42px;
+  font-weight: bold;
+  color: rgb(252, 107, 4);
+  margin-bottom: 20px;
+}
+
+.about_mainpara,
+.about_secpara {
+  font-size: 20px;
+  color: #3b3a3a;
+}
+
+.readmore_btn {
+  background-color: black;
+  color: rgb(232, 229, 229);
+  padding: 8px 40px;
+  font-size: 22px;
+  border: none;
+  margin-top: 20px;
+}
+
+/* right side ----------------------- */
+
+.about_img img {
+  width: 100%;
+  height: auto;
+}
+
+/* About section end
+----------------------------------- */
+
+
+/* Gallery section start
+--------------------------------------- */
+.gallery_section {
+  margin-top: 100px;
+}
+
+.gallery_title {
+  color: rgb(252, 107, 4);
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gallery_text {
+  text-align: center;
+  font-size: 20px;
+  color: #4e4d4d;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.gallery_img {
+  height: 350px;
+  width: 400px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.seemore_bt {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  font-size: 22px;
+  margin-left: 40%;
+  margin-bottom: 80px;
+}
+
+/* gallery section end --------------------------------- */
+
+
+
+/* service section start
+------------------------------------------------------------- */
+.service_section {
+  background-image: url(./Images/service_bg.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.service_title {
+  text-align: center;
+  color: rgb(255, 122, 6);
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.service_text {
+  color: rgb(254, 252, 252);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service_section2 {
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+
+.box_main {
+  background-color: rgb(255, 92, 33);
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.cup_1,
+.cup_2,
+.cup_3 {
+  height: 50px;
+  width: 50px;
+  margin-top: 45px;
+}
+
+.heading_text {
+  padding-top: 40px;
+  color: white;
+  font-size: 35px;
+}
+
+.para_text {
+  color: white;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.box_main .readmore_bt {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* service section end
+----------------------------------------------------------- */
+
+
+/* contact section start
+-------------------------------------------------------- */
+
+.contact_section {
+  background-image: url(./Images/contact_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.contact_heading {
+  color: rgb(252, 142, 24);
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mail_section {
+  background: transparent;
+  margin-top: 7%;
+  margin-bottom: 80px;
+}
+
+.mail_section .form_body {
+  background-color: rgb(62, 62, 62);
+  margin-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mail_section .form_body .email_form {
+  margin-left: 20px;
+}
+
+.form_label {
+  font-size: 18px;
+  color: white;
+  margin-left: 30px;
+}
+
+.form_input {
+  margin-left: 20px;
+  border-radius: 12px;
+  border: 3px solid orange;
+  font-size: 16px;
+  width: 90%;
+  padding: 8px;
+}
+
+.msg_btn {
+  margin-left: 20px;
+  height: 80px;
+  width: 90%;
+  border: 3px solid orange;
+  border-radius: 15px;
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+.form_btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.send_btn {
+  border: 3px solid orange;
+  border-radius: 12px;
+  padding: 10px 50px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.send_btn:focus {
+  background-color: orange;
+  border: 3px solid white;
+}
+
+/* contact section end
+--------------------------------------------------- */
+
+
+/* login up Form start
+----------------------------------------------------------------------------- */
+.login_form {
+  margin-top: 70px;
+  height: 659px;
+  background-image: url(./Images/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.login_form .form_body {
+  margin-top: 10%;
+  margin-left: 30%;
+  background-color: white;
+  width: 40%;
+  height: auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form_title {
+  font-weight: bold;
+  margin-left: 40%;
+  padding-bottom: 20px;
+}
+
+.login_emailinput,
+.login_passinput {
+  width: 100%;
+  height: 50px;
+}
+
+.login_passinput {
+  margin-top: 20px;
+}
+
+.login_password {
+  display: flex;
+  align-items: center;
+}
+
+.login_password i {
+  margin-top: 20px;
+  margin-left: -35px;
+}
+
+.login_btn {
+  background-color: rgb(162, 200, 254);
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.login_btn:hover,
+.login_btn:focus {
+  background-color: rgb(2, 141, 228);
+  color: white;
+}
+
+.forgot_password {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot_password a {
+  color: blue;
+  text-decoration: none;
+}
+
+.click_signup {
+  margin-left: 10px;
+}
+
+/* Login form end
+------------------------------------------------------------------------- */
+
+
+/* Sign up form start
+----------------------------------------------------------------------- */
+.signup_form {
+  margin-top: 87px;
+  background-color: rgb(106, 106, 105);
+  padding-bottom: 50px;
+}
+
+.signup_body {
+  margin-top: 50px;
+  background-color: white;
+  padding: 30px;
+  height: auto;
+}
+
+.signup_title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup_input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.signup_password {
+  display: flex;
+  align-items: center;
+}
+
+.signup_password i {
+  margin-top: 20px;
+  margin-left: -35px;
+}
+
+.signup_btn {
+  background-color: rgb(202, 200, 200);
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  width: 60%;
+  height: 40px;
+}
+
+.signup_btn:hover,
+.signup_btn:focus {
+  background-color: rgb(42, 41, 41);
+  color: white;
+}
+
+.for_login {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.for_login a {
+  text-decoration: none;
+}
+
+.signup_que {
+  margin-top: 2px;
+}
+
+.click_login {
+  color: rgb(45, 45, 240);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* Sign up form end 
+---------------------------------------------------------------------------- */
+
+
+/* footer section start
+---------------------------------------------------- */
+.footer_section {
+  background-color: rgb(22, 21, 21);
+  padding: 50px 0px;
+}
+
+.footer_heading {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  color: white;
+}
+
+.footer_section ul {
+  list-style-type: none;
+  color: white;
+}
+
+.location_text ul li {
+  margin-top: 5px;
+}
+
+.location_text ul span {
+  padding-left: 10px;
+}
+
+.location_text li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer section end
+-------------------------------------------------- */
