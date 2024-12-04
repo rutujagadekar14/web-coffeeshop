@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import React, { useState } from "react";
 import "../index.css";
 import signupForm from '../Images/signup_form.jpg';

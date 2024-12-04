@@ -11,52 +11,6 @@ function Header() {
 
     return (
         <>
-            {/* <header id='header_section'>
-                <div className='container-fluid'>
-                    <nav className='nav_bar'>
-                        <div className='Logo'><a href='#index' className='cafename'><NavLink to="/">GrandCoffee</NavLink></a></div>
-                        <div id='navbarNav'>
-                            <ul className='navigation-bar'>
-                                <li className='nav-item'>
-                                    <a className='nav-NavLink' href="#home_section">
-                                        <NavLink style={NavLinkStyle} to="/">Home</NavLink>
-                                    </a>
-                                </li>
-                                <li className='nav-item'>
-                                    <a className='nav-NavLink' href="#about_section">
-                                        <NavLink style={NavLinkStyle} to="/about"> About Us</NavLink></a>
-                                </li>
-                                <li className='nav-item'>
-                                    <a className='nav-NavLink' href="#gallery_section">
-                                        <NavLink style={NavLinkStyle} to="/gallery">Gallery</NavLink>
-                                    </a>
-                                </li>
-                                <li className='nav-item'>
-                                    <a className='nav-NavLink' href="#service_section">
-                                        <NavLink style={NavLinkStyle} to="/service">Services</NavLink>
-                                    </a>
-                                </li>
-                                <li className='nav-item'>
-                                    <a className='nav-NavLink' href="#contact_section">
-                                        <NavLink style={NavLinkStyle} to="/contact"> Contact Us</NavLink>
-                                    </a>
-                                </li>
-                                <li className="nav-item login">
-                                    <a className='nav-NavLink ' href="#Login_form">
-                                        <NavLink style={NavLinkStyle} to="/login">Log in</NavLink>
-                                    </a>
-                                </li>
-                                <li className="nav-item signup">
-                                    <a className='nav-NavLink' href="#signUp_form" >
-                                        <NavLink style={NavLinkStyle} to="/signup">Sign up</NavLink>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </header > */}
-
             <header className='bg-dark'>
                 <nav className="navbar navbar-expand-lg navbar-light bg-dark">
                     <div className="container-fluid px-5">

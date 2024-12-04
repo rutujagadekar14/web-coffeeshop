@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../index.css";
 import cup_1 from "../Images/cup_icon1.png";
 import cup_2 from "../Images/cup_icon2.png";
 import cup_3 from "../Images/cup_icon3.png";
 
 function Service() {
+    const [isExpanded_1, setIsExpanded_1] = useState(false);
+    const [isExpanded_2, setIsExpanded_2] = useState(false);
+    const [isExpanded_3, setIsExpanded_3] = useState(false);
+
+    const fullText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, consequatur?";
+    const lessText = "";
+
+
+    const handleToggle_1 = () => {
+        setIsExpanded_1(!isExpanded_1);
+    }
+    const handleToggle_2 = () => {
+        setIsExpanded_2(!isExpanded_2);
+    }
+    const handleToggle_3 = () => {
+        setIsExpanded_3(!isExpanded_3);
+    }
     return (
         <>
             <div className='service_section' id='service_section'>
@@ -22,7 +39,8 @@ function Service() {
                                     <img src={cup_1} alt="coffeecup" className='cup_1' />
                                     <h3 className='heading_text'>Original Coffee</h3>
                                     <p className='para_text'>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
-                                    <button className='readmore_bt'>READ MORE</button>
+                                    <p style={{ color: "#fefefe", }}>{isExpanded_1 ? fullText : lessText}</p>
+                                    <button className='readmore_bt' onClick={handleToggle_1}>{isExpanded_1 ? "READ LESS" : "READ MORE"}</button>
                                 </div>
                             </div>
                             <div className='col-4'>
@@ -30,7 +48,8 @@ function Service() {
                                     <img src={cup_2} alt="coffeecup" className='cup_2' />
                                     <h3 className='heading_text'>20 Coffee Flavors</h3>
                                     <p className='para_text'>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
-                                    <button className='readmore_bt'>READ MORE</button>
+                                    <p style={{ color: "#fefefe", }}>{isExpanded_2 ? fullText : lessText}</p>
+                                    <button className='readmore_bt' onClick={handleToggle_2}>{isExpanded_2 ? "READ LESS" : "READ MORE"}</button>
                                 </div>
                             </div>
                             <div className='col-4'>
@@ -38,7 +57,8 @@ function Service() {
                                     <img src={cup_3} alt="coffeecup" className='cup_3' />
                                     <h3 className='heading_text'>Pleasant Abient</h3>
                                     <p className='para_text'>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
-                                    <button className='readmore_bt'>READ MORE</button>
+                                    <p style={{ color: "#fefefe", }}>{isExpanded_3 ? fullText : lessText}</p>
+                                    <button className='readmore_bt' onClick={handleToggle_3}>{isExpanded_3 ? "READ LESS" : "READ MORE"}</button>
                                 </div>
                             </div>
                         </div>
